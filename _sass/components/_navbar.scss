@@ -6,7 +6,7 @@
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: $navbar-text-color;
+    color: $navbar-toggler-text-color;
     border: 0;
     background-color: $primary;
     @include heading-font;
@@ -47,16 +47,26 @@
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
-    color: $navbar-text-color-transparent;
     .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
     }
+    .navbar-brand {
+      color: $navbar-text-color-transparent;
+      @include script-font;
+      &.active,
+      &:active,
+      &:focus,
+      &:hover {
+        color: darken($primary, 10%);
+      }
+    }
     .navbar-nav {
       .nav-item {
         .nav-link {
+          color: $navbar-text-color-transparent;
           padding: 1.1em 1em !important;
         }
       }
