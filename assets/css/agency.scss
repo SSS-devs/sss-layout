@@ -18,6 +18,9 @@
 
 // Custom colors
 $primary: {{ site.data.style.highlight | default: "#fed136" }} !default;
+$navbar-color: {{ site.data.style.navbar-color | default: "#fff" }} !default;
+$navbar-text-color: {{ site.data.style.navbar-text-color | default: "#212529" }} !default;
+$navbar-text-color-transparent: {{ site.data.style.navbar-text-color-transparent | default: "#fff" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;
 $black: {{ site.data.style.black | default: "#000" }} !default;
 
