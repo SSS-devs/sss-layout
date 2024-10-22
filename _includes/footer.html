@@ -2,23 +2,30 @@
 <footer class="footer" id="footer" style="background-color: white">
   <div class="container">
     {% if site.locale and site.locale != "" and site.locale != nil %}
+      <!-- Contact info -->
+      <div class="d-flex flex-column align-items-center">
+            <dl class="list-group text-left">
+              {% for contact in site.data.sitetext[site.locale].footer.contact %}
+              <dt class="list-inline-item">
+		{{ contact.label }} :
+              </dt>
+	      <dd>
+ 		{{ contact.value }}
+	      </dd>
+              {% endfor %}
+            </dl>
+      </div>
     <div class="row align-items-center">
       <div class="col-md-4">
         <span class="copyright"
           >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
         >
       </div>
-      <!-- Contact info -->
+		<!--- spacing --->
       <div class="col-md-4">
-        <ul class="list-inline">
-          {% for contact in site.data.sitetext[site.locale].footer.contact %}
-          <li class="list-inline-item">
-		  {{ contact.label }} : {{ contact.value }}
-          </li>
-          {% endfor %}
+        <ul class="list-inline quicklinks">
         </ul>
-      </div>
-      <!-- Legal -->
+      </div><!-- Legal -->
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">

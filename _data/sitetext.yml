@@ -148,9 +148,9 @@ en: &DEFAULT_EN
     legal: "Privacy Policy"
     contact:
       - label: "Address"
-        icon: "lorum ipsum"
+        value: "lorum ipsum"
       - label: "phone number"
-        icon: "+597 123456"
+        value: "+597 123456"
 
 en-001: #English (World)
   <<: *DEFAULT_EN
