@@ -2,30 +2,40 @@
 <footer class="footer" id="footer" style="background-color: white">
   <div class="container">
     {% if site.locale and site.locale != "" and site.locale != nil %}
-      <!-- Contact info -->
-      <div class="d-flex flex-column align-items-center">
-            <dl class="list-group text-left">
-              {% for contact in site.data.sitetext[site.locale].footer.contact %}
-              <dt class="list-inline-item">
-		{{ contact.label }} :
-              </dt>
-	      <dd>
- 		{{ contact.value }}
-	      </dd>
-              {% endfor %}
-            </dl>
-      </div>
+    <!-- Contact info -->
+    <div class="d-flex flex-column align-items-start">
+          <dl class="list-group text-left">
+            {% for contact in site.data.sitetext[site.locale].footer.contact %}
+            <dt class="list-inline-item">
+	{{ contact.label }} :
+            </dt>
+            <dd class="text-center">
+	{{ contact.value }}
+            </dd>
+            {% endfor %}
+          </dl>
+    </div>
     <div class="row align-items-center">
-      <div class="col-md-4">
+      <div class="col-md-4 text-left">
         <span class="copyright"
           >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
         >
       </div>
-		<!--- spacing --->
+      <!-- Social Media -->
       <div class="col-md-4">
-        <ul class="list-inline quicklinks">
+        <ul class="list-inline social-buttons">
+          {% for link in site.data.sitetext.footer.social %}
+          <li class="list-inline-item">
+            {% if link.url %}
+            <a href="{{ link.url }}">
+              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+            </a>
+            {% endif %}
+          </li>
+          {% endfor %}
         </ul>
-      </div><!-- Legal -->
+      </div>
+      <!-- Legal -->
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
@@ -38,6 +48,19 @@
       </div>
     </div>
     {% else %}
+    <!-- Contact info -->
+    <div class="d-flex flex-column align-items-center">
+          <dl class="list-group text-left">
+            {% for contact in site.data.sitetext[site.locale].footer.contact %}
+            <dt class="list-inline-item">
+	{{ contact.label }} :
+            </dt>
+            <dd>
+	{{ contact.value }}
+            </dd>
+            {% endfor %}
+          </dl>
+    </div>
     <div class="row align-items-center">
       <div class="col-md-4">
         <span class="copyright"
