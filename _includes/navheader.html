@@ -48,6 +48,7 @@
   <!-- Header -->
   {% if site.locale and site.locale != "" and site.locale != nil %}
   <header class="masthead">
+  <div class="bg-dark">
     <div class="container">
       <div class="intro-text">
 	  {%- if site.data.sitetext[site.locale].header.title -%}
@@ -61,6 +62,7 @@
 	  {%- endif -%}
       </div>
     </div>
+  </div>
   </header>
   {% else %}
   <header class="masthead">

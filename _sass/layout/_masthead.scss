@@ -26,6 +26,9 @@ header.masthead {
     }
   }
 }
+header div.bg-dark {
+  background-color: #343a4090 !important;
+}
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {
