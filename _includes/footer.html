@@ -8,16 +8,12 @@
           >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
         >
       </div>
-      <!-- Social Media -->
+      <!-- Contact info -->
       <div class="col-md-4">
-        <ul class="list-inline social-buttons">
-          {% for link in site.data.sitetext[site.locale].footer.social %}
+        <ul class="list-inline">
+          {% for contact in site.data.sitetext[site.locale].footer.contact %}
           <li class="list-inline-item">
-            {% if link.url %}
-            <a href="{{ link.url }}">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-            </a>
-            {% endif %}
+		  {{ contact.label }} : {{ contact.value }}
           </li>
           {% endfor %}
         </ul>
