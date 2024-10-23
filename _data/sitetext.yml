@@ -11,10 +11,17 @@
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
+    title:
     text: It's Nice To Meet You
     button: Tell Me More
     buttonlink: "#services"
+    carousel:
+       - text: How can we be of Service?
+         button: Tell Me More
+         buttonlink: "#services"
+       - text: How can we help you?
+         button: Tell Me More
+         buttonlink: "#services"
 
   services:
     title: "Services"
