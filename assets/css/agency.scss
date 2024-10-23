@@ -25,7 +25,7 @@ $navbar-text-color-transparent: {{ site.data.style.navbar-text-color-transparent
 $navbar-toggler-text-color: {{ site.data.style.navbar-toggler-text-color | default: "#fff" }} !default;
 $masthead-text-color: {{ site.data.style.masthead-text-color | default: "#fff" }} !default;
 $transition-duration: {{ site.data.style.transition-duration | default: "5s" }} !default;
-$transition-type: {{ site.data.style.transition-duration | default: "linear" }} !default;
+$transition-type: {{ site.data.style.transition-type | default: "linear" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;
 $black: {{ site.data.style.black | default: "#000" }} !default;
 
