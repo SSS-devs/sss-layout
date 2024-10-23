@@ -87,17 +87,17 @@ en: &DEFAULT_EN
     horizontal-scrolling: "" #"yes/no"
     list:
       - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/envato.jpg
+        project: "hello world"
       - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/designmodo.jpg
+        project: "plus ultra"
       - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/themeforest.jpg
+        project: "with great power"
       - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/creative-market.jpg
+        project: "comes great responsibility"
 
   team:
     title: "OUR AMAZING TEAM"
