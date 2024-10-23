@@ -22,7 +22,7 @@ header.masthead {
       font-weight: 700;
       line-height: 35px;
       margin-bottom: 25px;
-      min-height:370px;
+      min-height:190px;
       @include heading-font;
     }
   }
@@ -56,11 +56,11 @@ header div.bg-dark {
         @include serif-font;
       }
       .intro-heading {
-        font-size: 75px;
+        font-size: 50px;
         font-weight: 700;
-        line-height: 75px;
+        line-height: 50px;
         margin-bottom: 50px;
-        min-height: 525px;
+        min-height: 270px;
         @include heading-font;
       }
     }
