@@ -29,6 +29,19 @@ header.masthead {
 header div.bg-dark {
   background-color: #343a4090 !important;
 }
+
+.progress-bar {
+    -webkit-transition: width $transition-duration $transition-type;
+    -moz-transition: width $transition-duration $transition-type;
+    -o-transition: width $transition-duration $transition-type;
+    transition: width $transition-duration $transition-type;
+   
+    width:0%;
+}
+.active .progress-bar{
+    width:100%;
+}
+
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {
