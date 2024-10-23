@@ -43,6 +43,12 @@
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
   <link href="assets/css/agency.css" rel="stylesheet" />
+  {% for carousel in site.data.sitetext[site.locale].header.carousel %}
+    {% if carousel.bgimage %}
+    <link href="assets/css/{{carousel.bgimage}}.css" rel="stylesheet" />
+    {% endif %}
+  {$ endfor %}
+
 
   <!-- Page container change top padding when nav shrinks -->
   {% if page.layout == "page" %}
