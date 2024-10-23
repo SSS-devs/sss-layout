@@ -92,5 +92,26 @@
         }
       }
     }
+	&.navbar-light {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $navbar-color;
+      .navbar-brand {
+        color: $primary;
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $navbar-text-color;
+            &.active,
+            &:hover {
+              color: $secondary;
+            }
+          }
+        }
+      }
+    }
   }
 }
