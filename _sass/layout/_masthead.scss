@@ -2,7 +2,7 @@
 header.masthead {
   text-align: center;
   color: $masthead-text-color;
-  background-image: url("#{$header-image}");
+  background-image: linear-gradient($overlay-color, $overlay-color), url("#{$header-image}");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
