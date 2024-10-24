@@ -8,9 +8,10 @@
         <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].portfolio.text | markdownify }}</h3>
       </div>
     </div>
-    <div class="row">
+    <div class="card-deck">
 	{% for project in site.portfolio %}
       <div class="col-md-4 col-sm-6 portfolio-item">
+	  <div class="card h-100">
         <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
@@ -23,6 +24,7 @@
           <h4>{{ project.caption.title }}</h4>
           <p class="text-muted">{{ project.caption.subtitle }}</p>
         </div>
+	  </div>
       </div>
 	{% endfor %}
     </div>
