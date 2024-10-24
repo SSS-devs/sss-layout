@@ -30,7 +30,9 @@
         letter-spacing: 1px;
         color: $navbar-text-color;
         @include heading-font;
-        &.active,
+        &.active {
+		  color: $secondary
+		}
         &:hover {
           color: $primary;
         }
