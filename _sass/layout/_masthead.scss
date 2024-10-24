@@ -76,7 +76,7 @@ header.masthead {
   }
 }
 @media (min-width: 992px) {
-.carousel-inner::after {
+.carousel-item::after {
 	border-width: $corner-width;
 	border-left-color: #fff;
 	border-top-color: #fff;
