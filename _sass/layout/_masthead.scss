@@ -29,15 +29,19 @@ header.masthead {
   }
 }
 
-.progress-bar {
-    -webkit-transition: width $transition-duration $transition-type;
-    -moz-transition: width $transition-duration $transition-type;
-    -o-transition: width $transition-duration $transition-type;
-    transition: width $transition-duration $transition-type;
-   
-    width:0%;
+@keyframes start-timer {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
+
 .active .progress-bar{
+    animation-name: start-timer;
+    animation-duration: $transition-duration;
+    animation-timing-function: $transition-type;
     width:100%;
 }
 
