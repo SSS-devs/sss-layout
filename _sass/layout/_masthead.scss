@@ -38,11 +38,6 @@ header.masthead {
   }
 }
 
-.progress-bar {
-  width: 0%;
-  transition: $transition-duration $transition-duration;
-}
-
 .active .progress-bar{
     animation-name: start-timer;
     animation-duration: $transition-duration;
