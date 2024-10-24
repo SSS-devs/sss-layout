@@ -82,6 +82,8 @@ en: &DEFAULT_EN
     section: about
 
   clients:
+    title: "Clients"
+    text: "lorum ipsum dolor sit amet"
     section: clients
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
