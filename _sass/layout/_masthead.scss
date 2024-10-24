@@ -43,6 +43,15 @@ header div.bg-dark {
     width:100%;
 }
 
+.intro-text {
+  opacity: 0;
+}
+
+.active .intro-text {
+  transition: $text-fade-transition-duration $text-fade-transition-type;
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {
