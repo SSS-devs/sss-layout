@@ -50,7 +50,7 @@ header.masthead {
   opacity: 1;
 }
 
-#carousel::after {
+.carousel-inner::after {
 	border-width: $corner-width;
 	border-left-color: #fff;
 	border-top-color: #fff;
