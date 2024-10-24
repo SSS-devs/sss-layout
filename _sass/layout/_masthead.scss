@@ -2,12 +2,6 @@
 header.masthead {
   text-align: center;
   color: $masthead-text-color;
-  background-color: $primary;
-  background-image: linear-gradient($overlay-color, $overlay-color), url("#{$header-image}");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;

@@ -33,8 +33,6 @@ $text-fade-transition-type: {{ site.data.style.text-fade-transition-type | defau
 $white: {{ site.data.style.white | default: "#fff" }} !default;
 $black: {{ site.data.style.black | default: "#000" }} !default;
 
-// Custom Images
-$header-image: "{{ site.data.style.header-image }}";
 $contact-image: "{{ site.data.style.contact-image }}";
 
 // Global CSS
