@@ -118,14 +118,12 @@
   }
   .navbar-brand::before {
 	border-width: $corner-width;
-	border-left-color: #fff;
-	border-top-color: #fff;
-	border-bottom-color: transparent;
-	border-right-color: transparent;
+	border-color: transparent;
 	left: 0;
 	top: 0;
 	position: absolute;
 	border-style: solid;
+        border-bottom-right-radius: $corner-width;
 	content: '';
         z-index: -1;
   }
