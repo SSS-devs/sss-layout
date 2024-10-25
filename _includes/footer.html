@@ -110,5 +110,7 @@
   }
 </script>
 {% endif %}
-<script src="assets/js/leaflet.js"></script>
+{% if site.map %}
+<script src="assets/js/{{site.map}}.js"></script>
+{% endif %}
 <!-- End Footer -->
