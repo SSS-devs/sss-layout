@@ -23,13 +23,17 @@ header.masthead {
   }
 }
 
-@keyframes start-timer {
+@keyframes start-timer{
   0% {
     width: 0%;
   }
   100% {
     width: 100%;
   }
+}
+
+header.masthead .carousel .container {
+  max-width: 1920px;
 }
 
 .active .progress-bar{
@@ -74,7 +78,7 @@ header.masthead {
   }
 }
 @media (min-width: 992px) {
-.carousel-item::after {
+  .carousel-item::after {
 	border-width: $corner-width;
 	border-left-color: #fff;
 	border-top-color: #fff;
@@ -85,5 +89,19 @@ header.masthead {
 	position: absolute;
 	border-style: solid;
 	content: '';
+  }
 }
+@media (min-width: 1920px) {
+  .carousel-item::after {
+	border-width: 384px;
+	border-left-color: #fff;
+	border-top-color: #fff;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	left: 0;
+	top: 0;
+	position: absolute;
+	border-style: solid;
+	content: '';
+  }
 }
