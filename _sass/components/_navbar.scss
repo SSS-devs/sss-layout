@@ -116,7 +116,7 @@
       }
     }
   }
-  .navbar-brand::after {
+  .navbar-brand::before {
 	border-width: $corner-width;
 	border-left-color: #fff;
 	border-top-color: #fff;
@@ -127,5 +127,12 @@
 	position: absolute;
 	border-style: solid;
 	content: '';
+        z-index: -1;
   }
+  .navbar-brand:hover:before {
+        border-color: #fff;
+        border-style: solid;
+        border-width: $corner-width;
+        border-bottom-right-radius: $corner-width;
+      }
 }
