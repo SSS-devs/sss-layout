@@ -93,10 +93,7 @@
           }
         }
       }
-      .navbar-brand:hover:before {
-            border-color: transparent;
-          }
-      }
+    }
 	&.navbar-light {
       padding-top: 0;
       padding-bottom: 0;
@@ -119,22 +116,4 @@
       }
     }
   }
-  .navbar-brand::before {
-	border-width: $corner-width;
-	border-color: transparent;
-	left: 0;
-	top: 0;
-	position: absolute;
-	border-style: solid;
-        border-bottom-right-radius: $corner-width;
-	content: '';
-        z-index: -1;
-  }
-  .navbar-brand:hover:before {
-        border-color: #fff;
-        border-style: solid;
-        border-width: $corner-width;
-        border-bottom-right-radius: $corner-width;
-        transition: $text-fade-transition-duration $text-fade-transition-type;
-      }
 }
