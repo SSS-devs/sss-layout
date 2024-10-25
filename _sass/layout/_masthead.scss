@@ -92,17 +92,3 @@ header.masthead .carousel .container, nav .container {
 	content: '';
   }
 }
-@media (min-width: 1920px) {
-  .carousel-item::after {
-	border-width: 384px;
-	border-left-color: #fff;
-	border-top-color: #fff;
-	border-bottom-color: transparent;
-	border-right-color: transparent;
-	left: 0;
-	top: 0;
-	position: absolute;
-	border-style: solid;
-	content: '';
-  }
-}
