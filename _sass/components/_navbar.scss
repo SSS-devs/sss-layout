@@ -134,5 +134,6 @@
         border-style: solid;
         border-width: $corner-width;
         border-bottom-right-radius: $corner-width;
+        transition: $text-fade-transition-duration $text-fade-transition-type;
       }
 }
