@@ -32,8 +32,8 @@ header.masthead {
   }
 }
 
-header.masthead .carousel .container {
-  max-width: 1920px;
+header.masthead .carousel .container, nav .container {
+  max-width: 100%;
   padding: 0;
 }
 
