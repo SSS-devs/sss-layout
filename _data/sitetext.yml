@@ -145,6 +145,13 @@ en: &DEFAULT_EN
     title: "Contact Us"
     text: "Lorem ipsum or call 123456789"
     section: contact
+    map:
+      center:
+        latitude: 5.80
+        longitude: -55.20
+      location:
+        latitude: 5.80
+        longitude: -55.20
     name: "Name*"
     name-validation: "Please enter your name."
     email: "Email*"
