@@ -147,6 +147,12 @@ en: &DEFAULT_EN
     section: contact
     map:
       server: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      zoom:
+        level: 17
+        max: 19
+        control: true
+        drag: false
+        doubleclick: true
       center:
         latitude: 5.80
         longitude: -55.20
