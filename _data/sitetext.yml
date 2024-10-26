@@ -15,16 +15,16 @@ en: &DEFAULT_EN
     text: It's Nice To Meet You
     button: Tell Me More
     buttonlink: "#services"
-    bgimage: header.png
+    bgimage: assets/img/header.png
     carousel:
        - text: How can we be of Service?
          button: Tell Me More
          buttonlink: "#services"
-         bgimage: header.png
+         bgimage: assets/img/header.png
        - text: How can we help you?
          button: Tell Me More
          buttonlink: "#services"
-         bgimage: header.png
+         bgimage: assets/img/header.png
 
   services:
     title: "Services"
