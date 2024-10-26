@@ -146,6 +146,7 @@ en: &DEFAULT_EN
     text: "Lorem ipsum or call 123456789"
     section: contact
     map:
+      server: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
       center:
         latitude: 5.80
         longitude: -55.20
