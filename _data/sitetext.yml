@@ -148,7 +148,7 @@ en: &DEFAULT_EN
     map:
       server: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
       zoom:
-        level: 17
+        level: 10
         max: 19
         control: true
         drag: false
