@@ -55,7 +55,7 @@
          <li data-target="#carousel" data-slide-to="2" class="progress"><span class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></li>
        </ol>
        <div class="carousel-inner">
-         <div class="{{site.data.sitetext[site.locale].header.bgimage | split:'.' | slice: 0 }} carousel-item active">
+         <div class="{{site.data.sitetext[site.locale].header.bgimage | remove:'.' | remove: '/' }} carousel-item active">
            <div class="container">
              <div class="intro-text">
                  {%- if site.data.sitetext[site.locale].header.title -%}
@@ -71,7 +71,7 @@
            </div>
          </div>
          {% for carousel in site.data.sitetext[site.locale].header.carousel %}
-         <div class="{{carousel.bgimage | split: '.' | slice: 0 }} carousel-item">
+         <div class="{{carousel.bgimage | remove: '.' | remove: "/" }} carousel-item">
              <div class="container">
                <div class="intro-text">
                    {%- if site.data.sitetext[site.locale].header.title -%}

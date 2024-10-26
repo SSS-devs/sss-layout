@@ -1,8 +1,8 @@
 ---
 ---
-.{{ site.data.sitetext[site.locale].header.bgimage | split: "." | slice: 0 }} {
+.{{ site.data.sitetext[site.locale].header.bgimage | remove: "." | remove: "/" }} {
   background-color: {{ site.data.style.highlight }};
-  background-image: linear-gradient({{ site.data.style.overlay-color }}, {{ site.data.style.overlay-color }}), url("../img/{{ site.data.sitetext[site.locale].header.bgimage }}");
+  background-image: linear-gradient({{ site.data.style.overlay-color }}, {{ site.data.style.overlay-color }}), url("/{{ site.data.sitetext[site.locale].header.bgimage }}");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10,9 +10,9 @@
 }
 
 {% for carousel in site.data.sitetext[site.locale].header.carousel %}
-.{{ carousel.bgimage | split: "." | slice: 0 }} {
+.{{ carousel.bgimage | remove: "." | remove: "/" }} {
   background-color: {{ site.data.style.highlight }};
-  background-image: linear-gradient({{ site.data.style.overlay-color }}, {{ site.data.style.overlay-color }}), url("../img/{{ carousel.bgimage }}");
+  background-image: linear-gradient({{ site.data.style.overlay-color }}, {{ site.data.style.overlay-color }}), url("/{{ carousel.bgimage }}");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
