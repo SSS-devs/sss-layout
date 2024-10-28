@@ -94,7 +94,7 @@ header.masthead .carousel .container {
 	border-style: solid;
 	content: '';
   }
-  nav .container {
+  nav:not(.navbar-shrink) .container {
     max-width: 100%;
     padding: 0;
   }
