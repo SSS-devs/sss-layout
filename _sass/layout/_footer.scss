@@ -15,10 +15,6 @@
     text-transform: none;
     @include heading-font;
   }
-  .container {
-    max-width: 100%;
-    padding: 0 25px;
-  }
 }
 
 ul.social-buttons {
@@ -43,5 +39,11 @@ ul.social-buttons {
         background-color: $primary;
       }
     }
+  }
+}
+@media (min-width: 992px) {
+  .footer .container {
+    max-width: 100%;
+    padding: 0 25px;
   }
 }
