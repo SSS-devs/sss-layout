@@ -39,6 +39,12 @@ header.masthead .carousel .container {
   padding: 0;
 }
 
+.progress-bar {
+    width: 0%;
+    background-color: $primary;
+	transition-duration: $transition-duration;
+}
+
 .active .progress-bar{
     animation-name: start-timer;
     animation-duration: $transition-duration;
