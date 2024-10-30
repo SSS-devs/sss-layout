@@ -1,14 +1,5 @@
 ---
 ---
-.{{ site.data.sitetext[site.locale].header.bgimage | remove: "." | remove: "/" }} {
-  background-color: {{ site.data.style.highlight }};
-  background-image: linear-gradient({{ site.data.style.carousel-bg-overlay-color-top }}, {{ site.data.style.carousel-bg-overlay-color-bottom }}), url("/{{ site.data.sitetext[site.locale].header.bgimage }}");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
-}
-
 {% for carousel in site.data.sitetext[site.locale].header.carousel %}
 .{{ carousel.bgimage | remove: "." | remove: "/" }} {
   background-color: {{ site.data.style.highlight }};

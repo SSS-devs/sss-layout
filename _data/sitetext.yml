@@ -12,11 +12,11 @@
 en: &DEFAULT_EN
   header:
     title:
-    text: It's Nice To Meet You
-    button: Tell Me More
-    buttonlink: "#services"
-    bgimage: assets/img/header.png
     carousel:
+       - text: It's Nice to Meet You
+         button: Tell Me More
+         buttonlink: "#services"
+         bgimage: assets/img/header.png
        - text: How can we be of Service?
          button: Tell Me More
          buttonlink: "#services"
