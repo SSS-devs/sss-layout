@@ -65,7 +65,7 @@
 	     {% else %}
          <div class="{{carousel.bgimage | remove: '.' | remove: "/" }} carousel-item">
 		 {% endif %}
-             <div class="container">
+             <div class="vertically-center">
                <div class="intro-text">
                    {%- if site.data.sitetext[site.locale].header.title -%}
                  <div class="intro-lead-in">{{ site.data.sitetext[site.locale].header.title | markdownify }}</div>
