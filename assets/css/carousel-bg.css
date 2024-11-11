@@ -11,9 +11,9 @@
 }
 {% endfor %}
 
-@media (min-height: 576px) {
+@media ( min-height: {{ site.data.style.carousel-bg-min-height }} ) {
   .carousel-inner {
-    height: 100dvh;
+    height: 100svh;
   }
 
   .carousel-item {
