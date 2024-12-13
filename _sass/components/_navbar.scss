@@ -2,7 +2,7 @@
 #mainNav {
   background-color: $navbar-color;
   .navbar-toggler {
-    font-size: 12px;
+    font-size: 1.75rem;
     right: 0;
     padding: 13px;
     text-transform: uppercase;
@@ -24,7 +24,7 @@
   .navbar-nav {
     .nav-item {
       .nav-link {
-        font-size: 90%;
+        font-size: 1rem;
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
@@ -50,7 +50,7 @@
     border: none;
     background-color: transparent;
     .navbar-brand {
-      font-size: 1.75em;
+      font-size: 1.75rem;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
@@ -79,7 +79,7 @@
       background-color: $navbar-color;
       .navbar-brand {
         color: $primary;
-        font-size: 1.25em;
+        font-size: 1.25rem;
         padding: 12px 0;
       }
       .navbar-nav {
@@ -100,7 +100,7 @@
       background-color: $navbar-color;
       .navbar-brand {
         color: $primary;
-        font-size: 1.25em;
+        font-size: 1.25rem;
         padding: 12px 0;
       }
       .navbar-nav {
