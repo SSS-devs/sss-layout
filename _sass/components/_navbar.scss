@@ -4,7 +4,7 @@
   .navbar-toggler {
     font-size: 1.75rem;
     right: 0;
-    padding: 13px;
+    padding: 1.75em;
     text-transform: uppercase;
     color: $navbar-toggler-text-color;
     border: 0;
@@ -42,15 +42,15 @@
 }
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 1.625em;
+    padding-bottom: 1.625em;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
     .navbar-brand {
-      font-size: 1.75rem;
+      font-size: 0.75rem;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
@@ -80,7 +80,7 @@
       .navbar-brand {
         color: $primary;
         font-size: 1.25rem;
-        padding: 12px 0;
+        padding: 0.75em 0;
       }
       .navbar-nav {
         .nav-item {
@@ -101,7 +101,7 @@
       .navbar-brand {
         color: $primary;
         font-size: 1.25rem;
-        padding: 12px 0;
+        padding: 0.75em 0;
       }
       .navbar-nav {
         .nav-item {
