@@ -74,7 +74,7 @@
                  <div class="intro-heading text-uppercase">{{ carousel.text | markdownify }}</div>
                    {%- endif -%}
                    {%- if carousel.button -%}
-                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext[site.locale].header.buttonlink }}">{{ carousel.button }}</a>
+                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ carousel.buttonlink }}">{{ carousel.button }}</a>
                    {%- endif -%}
                </div>
              </div>
