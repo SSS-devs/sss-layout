@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-lg-12">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        {% if site.g_recaptcha_key != "" %}<script src="https://www.google.com/recaptcha/api.js" async defer></script>{% endif %}
+        {% if site.g_recaptcha_key %}<script src="https://www.google.com/recaptcha/api.js" async defer></script>{% endif %}
         <script type="text/javascript">
             (function() {
                 // https://dashboard.emailjs.com/admin/account
@@ -57,7 +57,7 @@
                   required="required" data-validation-required-message="{{ site.data.sitetext[site.locale].contact.message-validation | default: "Please enter a message." }}"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
-              {% if site.g_recaptcha_key != "" %}<div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div> {% endif %}
+              {% if site.g_recaptcha_key %}<div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div> {% endif %}
             </div>
             <input type="hidden" name="subject" id="email-subject"
               value="{{ site.data.sitetext[site.locale].contact.subject | default: "Contact Form Submission" }}">
@@ -120,7 +120,7 @@
                   required="required" data-validation-required-message="{{ site.data.sitetext.contact.message-validation | default: "Please enter a message." }}"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
-              {% if site.g_recaptcha_key != "" %}<div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div> {% endif %}
+              {% if site.g_recaptcha_key %}<div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div> {% endif %}
             </div>
             <input type="hidden" name="subject" id="email-subject"
               value="{{ site.data.sitetext.contact.subject | default: "Contact Form Submission" }}">
