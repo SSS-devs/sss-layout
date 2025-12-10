@@ -17,7 +17,7 @@
             (function() {
                 // https://dashboard.emailjs.com/admin/account
                 emailjs.init({
-                    publicKey: "2s_ARaGGGfu2YCS_7",
+                    publicKey: "{{ site.emailjs_publickey }}",
                 });
             })();
         </script>
@@ -57,7 +57,7 @@
                   required="required" data-validation-required-message="{{ site.data.sitetext[site.locale].contact.message-validation | default: "Please enter a message." }}"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
-              <!-- <div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div> -->
+              {% if site.g_recaptcha_key != "" %}<div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div> {% endif %}
             </div>
             <input type="hidden" name="subject" id="email-subject"
               value="{{ site.data.sitetext[site.locale].contact.subject | default: "Contact Form Submission" }}">
@@ -120,7 +120,7 @@
                   required="required" data-validation-required-message="{{ site.data.sitetext.contact.message-validation | default: "Please enter a message." }}"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
-              <!--<div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div>-->
+              {% if site.g_recaptcha_key != "" %}<div class="g-recaptcha" data-sitekey="{{ site.g_recaptcha_key }}"></div> {% endif %}
             </div>
             <input type="hidden" name="subject" id="email-subject"
               value="{{ site.data.sitetext.contact.subject | default: "Contact Form Submission" }}">
