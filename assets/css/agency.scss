@@ -17,6 +17,7 @@
 {% endif %}
 
 // Custom colors
+$logo-height: {{ site.logo.height | default: 52 }} !default;
 $primary: {{ site.data.style.highlight | default: "#fed136" }} !default;
 $secondary: {{ site.data.style.secondary | default: "#fed136" }} !default;
 $navbar-color: {{ site.data.style.navbar-color | default: "#fff" }} !default;
