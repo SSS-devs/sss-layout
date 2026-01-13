@@ -19,7 +19,6 @@ header.masthead {
       font-weight: 700;
       line-height: 35px;
       margin-bottom: 25px;
-      min-height:190px;
       @include heading-font;
     }
   }
@@ -63,7 +62,28 @@ header.masthead .carousel .container {
   opacity: 1;
 }
 
-
+@media (max-width: 450px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 9.375em;
+      padding-bottom: 6.25em;
+      .intro-lead-in {
+        font-size: 1rem;
+        font-style: italic;
+        line-height: 22px;
+        margin-bottom: 25px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 25px;
+        @include heading-font;
+      }
+    }
+  }
+}
 
 @media (min-width: 768px) {
   header.masthead {
@@ -82,7 +102,6 @@ header.masthead .carousel .container {
         font-weight: 700;
         line-height: 50px;
         margin-bottom: 50px;
-        min-height: 270px;
         @include heading-font;
       }
     }
