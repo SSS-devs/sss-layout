@@ -1,4 +1,9 @@
 // Styling for the navbar
+@media (max-width: 450px) {
+  .navbar-logo {
+    height: $small-logo-height!important;
+  }
+}
 #mainNav {
   background-color: $navbar-color;
   .navbar-toggler {
@@ -22,7 +27,7 @@
     }
   }
   .navbar-logo {
-    height: $logo-height px;
+    height: $logo-height;
   }
   .navbar-nav {
     .nav-item {
@@ -41,11 +46,6 @@
         }
       }
     }
-  }
-}
-@media (max-width: 450px) {
-  .navbar-logo {
-    height: $small-logo-height;
   }
 }
 @media (min-width: 992px) {
