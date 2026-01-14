@@ -19,7 +19,6 @@ header.masthead {
       font-weight: 700;
       line-height: 35px;
       margin-bottom: 25px;
-      min-height:190px;
       @include heading-font;
     }
   }
@@ -103,7 +102,6 @@ header.masthead .carousel .container {
         font-weight: 700;
         line-height: 50px;
         margin-bottom: 50px;
-        min-height: 270px;
         @include heading-font;
       }
     }
